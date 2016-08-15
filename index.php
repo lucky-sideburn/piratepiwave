@@ -136,7 +136,7 @@ input[type=range]:focus::-ms-fill-upper {
 <html>
   <body>
     <form action="action_page.php" method="get">
-      <input id="myrange" type="range" name="points" min="0" max="200" step=".1" onchange="change_freq(parseFloat(this.value))" value=<?php echo $_GET["frequency"] ?> >
+      <input id="myrange" type="range" name="points" min="87" max="108" step=".1" onchange="change_freq(parseFloat(this.value))" value=<?php echo $_GET["frequency"] ?> >
       <br>
       <h2>Frequency: <?php echo $_GET["frequency"] ?></h2>
       <input class="button-green" type="button" value="+" onclick="change_freq(parseFloat(document.getElementById('myrange').value) + parseFloat(0.1))" />
