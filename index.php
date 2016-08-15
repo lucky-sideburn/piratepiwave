@@ -1,6 +1,6 @@
 <style>
 .button-blue {
-    background-color: #0099ff; 
+    background-color: #0099ff;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -131,78 +131,78 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 </style>
+
 <!DOCTYPE html>
 <html>
-<body>
-
-<form action="action_page.php" method="get">
-  <input id="myrange" type="range" name="points" min="0" max="200" step=".1" onchange="change_freq(parseFloat(this.value))" value=<?php echo $_GET["frequency"] ?> >
-<br>
- <h2>Frequency: <?php echo $_GET["frequency"] ?></h2>
- <input class="button-green" type="button" value="+" onclick="change_freq(parseFloat(document.getElementById('myrange').value) + parseFloat(0.1))" />
- <input class="button-red" type="button" value="-" onclick="change_freq(parseFloat(document.getElementById('myrange').value) - parseFloat(0.1))" />
-<br><br>
-<input class="button-blue" type="button" value="Rai-Radio-1" onclick="change_freq(parseFloat(87.6))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Onda-Rossa" onclick="change_freq(parseFloat(87.9))" /><br><br>
-<input class="button-blue" type="button" value="Ecoradio" onclick="change_freq(parseFloat(88.3))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Radicale" onclick="change_freq(parseFloat(88.6))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Citta-Aperta" onclick="change_freq(parseFloat(88.9))" /><br><br>
-<input class="button-blue" type="button" value="Radio-LatteMiele" onclick="change_freq(parseFloat(90.1))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Deejay" onclick="change_freq(parseFloat(90.3))" /><br><br>
-<input class="button-blue" type="button" value="Radio-m2o" onclick="change_freq(parseFloat(90.5))" /><br><br>
-<input class="button-blue" type="button" value="Lifegate-Radio" onclick="change_freq(parseFloat(90.9))" /><br><br>
-<input class="button-blue" type="button" value="Rai-Radio-2" onclick="change_freq(parseFloat(91.2))" /><br><br>
-<input class="button-blue" type="button" value="RTL" onclick="change_freq(parseFloat(91.5))" /><br><br>
-<input class="button-blue" type="button" value="Rai-Radio-2" onclick="change_freq(parseFloat(91.7))" /><br><br>
-<input class="button-blue" type="button" value="R-101" onclick="change_freq(parseFloat(92.00))" /><br><br>
-<input class="button-blue" type="button" value="RTL" onclick="change_freq(parseFloat(92.4))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Italia-anni-60" onclick="change_freq(parseFloat(93.00))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Vaticana" onclick="change_freq(parseFloat(93.3))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Subasio" onclick="change_freq(parseFloat(94.00))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Subasio-+" onclick="change_freq(parseFloat(94.2))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Subasio" onclick="change_freq(parseFloat(94.5))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Maria" onclick="change_freq(parseFloat(94.8))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Maria" onclick="change_freq(parseFloat(95.1))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Dimensione-Musica" onclick="change_freq(parseFloat(95.3))" /><br><br>
-<input class="button-blue" type="button" value="Radio-capital" onclick="change_freq(parseFloat(95.5))" /><br><br>
-<input class="button-blue" type="button" value="Radio-capital" onclick="change_freq(parseFloat(95.8))" /><br><br>
-<input class="button-blue" type="button" value="Radio-105" onclick="change_freq(parseFloat(96.1))" /><br><br>
-<input class="button-blue" type="button" value="Radio-105" onclick="change_freq(parseFloat(96.5))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Incontro-Italia" onclick="change_freq(parseFloat(96.8))" /><br><br>
-<input class="button-blue" type="button" value="m2o" onclick="change_freq(parseFloat(97.00))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Kiss-Kiss" onclick="change_freq(parseFloat(97.2))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Kiss-Kiss" onclick="change_freq(parseFloat(97.9))" /><br><br>
-<input class="button-blue" type="button" value="Virgin-Radio" onclick="change_freq(parseFloat(98.7))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Globo" onclick="change_freq(parseFloat(99.6))" /><br><br>
-<input class="button-blue" type="button" value="R-101" onclick="change_freq(parseFloat(100.00))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Deejay" onclick="change_freq(parseFloat(101.00))" /><br><br>
-<input class="button-blue" type="button" value="RTL" onclick="change_freq(parseFloat(102.1))" /><br><br>
-<input class="button-blue" type="button" value="RAM-Power" onclick="change_freq(parseFloat(102.7))" /><br><br>
-<input class="button-blue" type="button" value="RDS-Radio-Dimensione-Suono" onclick="change_freq(parseFloat(103.00))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Vaticana" onclick="change_freq(parseFloat(103.8))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Italia-Solo-Musica-Italiana" onclick="change_freq(parseFloat(104.2))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Radio" onclick="change_freq(parseFloat(104.5))" /><br><br>
-<input class="button-blue" type="button" value="Radio-Vaticana-One" onclick="change_freq(parseFloat(105.00))" /><br><br>
-<input class="button-blue" type="button" value="Dimensione-Suono-2" onclick="change_freq(parseFloat(105.3))" /><br><br>
-  <input class="button-blue" type="button" value="Radio-Rock" onclick="change_freq(parseFloat(106.6))" /><br><br>
-  </form>
- </body>
+  <body>
+    <form action="action_page.php" method="get">
+      <input id="myrange" type="range" name="points" min="0" max="200" step=".1" onchange="change_freq(parseFloat(this.value))" value=<?php echo $_GET["frequency"] ?> >
+      <br>
+      <h2>Frequency: <?php echo $_GET["frequency"] ?></h2>
+      <input class="button-green" type="button" value="+" onclick="change_freq(parseFloat(document.getElementById('myrange').value) + parseFloat(0.1))" />
+      <input class="button-red" type="button" value="-" onclick="change_freq(parseFloat(document.getElementById('myrange').value) - parseFloat(0.1))" />
+      <br><br>
+      <input class="button-blue" type="button" value="Rai-Radio-1" onclick="change_freq(parseFloat(87.6))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Onda-Rossa" onclick="change_freq(parseFloat(87.9))" /><br><br>
+      <input class="button-blue" type="button" value="Ecoradio" onclick="change_freq(parseFloat(88.3))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Radicale" onclick="change_freq(parseFloat(88.6))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Citta-Aperta" onclick="change_freq(parseFloat(88.9))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-LatteMiele" onclick="change_freq(parseFloat(90.1))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Deejay" onclick="change_freq(parseFloat(90.3))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-m2o" onclick="change_freq(parseFloat(90.5))" /><br><br>
+      <input class="button-blue" type="button" value="Lifegate-Radio" onclick="change_freq(parseFloat(90.9))" /><br><br>
+      <input class="button-blue" type="button" value="Rai-Radio-2" onclick="change_freq(parseFloat(91.2))" /><br><br>
+      <input class="button-blue" type="button" value="RTL" onclick="change_freq(parseFloat(91.5))" /><br><br>
+      <input class="button-blue" type="button" value="Rai-Radio-2" onclick="change_freq(parseFloat(91.7))" /><br><br>
+      <input class="button-blue" type="button" value="R-101" onclick="change_freq(parseFloat(92.00))" /><br><br>
+      <input class="button-blue" type="button" value="RTL" onclick="change_freq(parseFloat(92.4))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Italia-anni-60" onclick="change_freq(parseFloat(93.00))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Vaticana" onclick="change_freq(parseFloat(93.3))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Subasio" onclick="change_freq(parseFloat(94.00))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Subasio-+" onclick="change_freq(parseFloat(94.2))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Subasio" onclick="change_freq(parseFloat(94.5))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Maria" onclick="change_freq(parseFloat(94.8))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Maria" onclick="change_freq(parseFloat(95.1))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Dimensione-Musica" onclick="change_freq(parseFloat(95.3))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-capital" onclick="change_freq(parseFloat(95.5))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-capital" onclick="change_freq(parseFloat(95.8))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-105" onclick="change_freq(parseFloat(96.1))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-105" onclick="change_freq(parseFloat(96.5))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Incontro-Italia" onclick="change_freq(parseFloat(96.8))" /><br><br>
+      <input class="button-blue" type="button" value="m2o" onclick="change_freq(parseFloat(97.00))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Kiss-Kiss" onclick="change_freq(parseFloat(97.2))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Kiss-Kiss" onclick="change_freq(parseFloat(97.9))" /><br><br>
+      <input class="button-blue" type="button" value="Virgin-Radio" onclick="change_freq(parseFloat(98.7))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Globo" onclick="change_freq(parseFloat(99.6))" /><br><br>
+      <input class="button-blue" type="button" value="R-101" onclick="change_freq(parseFloat(100.00))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Deejay" onclick="change_freq(parseFloat(101.00))" /><br><br>
+      <input class="button-blue" type="button" value="RTL" onclick="change_freq(parseFloat(102.1))" /><br><br>
+      <input class="button-blue" type="button" value="RAM-Power" onclick="change_freq(parseFloat(102.7))" /><br><br>
+      <input class="button-blue" type="button" value="RDS-Radio-Dimensione-Suono" onclick="change_freq(parseFloat(103.00))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Vaticana" onclick="change_freq(parseFloat(103.8))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Italia-Solo-Musica-Italiana" onclick="change_freq(parseFloat(104.2))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Radio" onclick="change_freq(parseFloat(104.5))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Vaticana-One" onclick="change_freq(parseFloat(105.00))" /><br><br>
+      <input class="button-blue" type="button" value="Dimensione-Suono-2" onclick="change_freq(parseFloat(105.3))" /><br><br>
+      <input class="button-blue" type="button" value="Radio-Rock" onclick="change_freq(parseFloat(106.6))" /><br><br>
+    </form>
+  </body>
 </html>
 
 <script>
-function change_freq(freq){
-  document.location = "./index.php?frequency=" + freq.toFixed(1);  
-}
+  function change_freq(freq){
+    document.location = "./index.php?frequency=" + freq.toFixed(1);
+  }
 </script>
+
 <?php
-if ( ! $_GET["frequency"]) {
-  $output = shell_exec("pr=`ps -ef | grep pifm | grep sudo | grep -v grep | awk '{ print $2 }'`; kill $pr || echo \'pifm is not running\'");
-  #echo "<pre>$output</pre>";
-  header("Location: index.php?frequency=103.3");
-}
-else {
- $output = shell_exec("pr=`ps -ef | grep sudo | grep pifm | grep -v grep | awk '{ print $2 }'`; sudo kill \$pr || echo \'pifm is not running\'");
- $output = shell_exec("sudo /usr/local/pifm/pifm /usr/local/pifm/sounds/star-wars.wav " . $_GET['frequency'] . "  > /dev/null &");
-}
+  if ( ! $_GET["frequency"]) {
+    $output = shell_exec("pr=`ps -ef | grep pifm | grep sudo | grep -v grep | awk '{ print $2 }'`; kill $pr || echo \'pifm is not running\'");
+    header("Location: index.php?frequency=103.3");
+  }
+  else {
+  $output = shell_exec("pr=`ps -ef | grep sudo | grep pifm | grep -v grep | awk '{ print $2 }'`; sudo kill \$pr || echo \'pifm is not running\'");
+  $output = shell_exec("sudo /usr/local/pifm/pifm /usr/local/pifm/sounds/star-wars.wav " . $_GET['frequency'] . "  > /dev/null &");
+  }
 
 ?>
